@@ -59,12 +59,12 @@ def handle_stop_signals(signum, frame):
             extra_args=[signal.Signals(signum).name, signum, frame],
         )
  
-        app = Client(
+app = Client(
     "unzip_bot",
     api_id=API_ID,
     api_hash=API_HASH,
-    sleep_threshold=60  # Increase this to 60 seconds or more
-)
+    sleep_threshold=60 )        
+
     
     
     )

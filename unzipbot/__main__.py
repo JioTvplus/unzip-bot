@@ -59,15 +59,11 @@ def handle_stop_signals(signum, frame):
             extra_args=[signal.Signals(signum).name, signum, frame],
         )
  
-app = Client(
-    "unzip_bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    sleep_threshold=60 )        
+
 
     
     
-    )
+    
 
     loop = asyncio.get_event_loop()
     loop.create_task(coro=async_shutdown_bot())

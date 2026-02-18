@@ -70,7 +70,12 @@ def setup_signal_handlers():
         loop.add_signal_handler(
             sig=sig, callback=lambda s=sig: handle_stop_signals(signum=s, frame=None)
         )
-
+app = Client(
+    "unzip_bot",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    sleep_threshold=60  # Increase this to 60 seconds or more
+)
 
 async def main():
     try:

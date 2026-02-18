@@ -1,1 +1,1 @@
-pyrogram==2.0.106
+unzipbot: bash start.sh

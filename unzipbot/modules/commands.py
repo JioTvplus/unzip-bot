@@ -61,7 +61,7 @@ def sufficient_disk_space(required_space):
     if free_space >= required_space and free_space >= five_percent_total:
         return True
 
-    return False
+    return True
 
 
 @unzipbot_client.on_message(filters=filters.private)
